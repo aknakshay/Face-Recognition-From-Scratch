@@ -8,14 +8,7 @@
         50
       ],
       "tensorPath": "https://raw.githubusercontent.com/aknakshay/Face-Recognition-From-Scratch/master/embeddings10.tsv",
-      "metadataPath": "https://raw.githubusercontent.com/aknakshay/Face-Recognition-From-Scratch/master/embeddings10.meta",
-      "sprite": {
-        "imagePath": "https://github.com/.../optional.sprite.png",
-        "singleImageDim": [
-          32,
-          32
-        ]
-      }
+      "metadataPath": "https://raw.githubusercontent.com/aknakshay/Face-Recognition-From-Scratch/master/embeddings10.meta"
     }
   ]
 }

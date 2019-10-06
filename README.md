@@ -1,5 +1,5 @@
 # Face-Recognition-From-Scratch
-Implementing a Face Recognition CV Model using Online Triplet Mining on IMFDB Dataset
+### Implementing a Face Recognition CV Model using Online Triplet Mining on IMFDB Dataset
 
 
 FaceNet is a deep learning model which learns mappings from face images to a compact Euclidian space and the distance between two embeddings correspond to the measure of similarity between faces. The embeddings can be used for face verification, clustering faces, etc.
@@ -11,7 +11,7 @@ We try to create embeddings in a way that the distance between the embeddings of
 
 Triplets are generated online by selecting hard positive/negative examples from within a minibatch. The triplet images are transformed into 128 Dimensional embeddings and the distance between embeddings of positive and anchor is decreased and distance between embeddings of negative and anchor image is increased.
 
-Steps
+### Steps
 1.	Load Image Dataset
 2.	Pre-process Dataset
 a.	Detect Faces in the image using MTCNN and crop the image accordingly

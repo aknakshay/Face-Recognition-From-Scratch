@@ -32,3 +32,5 @@ c.	Divide the dataset into train and test
 d.	Train an SVM model using train set
 e.	Test the model using test set
 
+
+For detailed implementation, read the [project report here.](https://github.com/aknakshay/Face-Recognition-From-Scratch/blob/master/Project%20Report.pdf)

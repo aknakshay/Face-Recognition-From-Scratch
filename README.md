@@ -14,23 +14,23 @@ Triplets are generated online by selecting hard positive/negative examples from 
 ### Steps
 1.	Load Image Dataset
 2.	Pre-process Dataset
-a.	Detect Faces in the image using MTCNN and crop the image accordingly
-b.	Affine transformations are applied to straighten the face
-c.	Normalize the image
-d.	Resize the image to the input size of 224 × 224
+    - a.	Detect Faces in the image using MTCNN and crop the image accordingly
+    - b.	Affine transformations are applied to straighten the face
+    - c.	Normalize the image
+    - d.	Resize the image to the input size of 224 × 224
 3.	Training (with Online Triplet Selection)
 For minibatch in data:
-a.	Train the network forward and store the 128-D embedding
-b.	Calculate the distance between each of the image in the mini batch
-c.	From an anchor, find semi hard and hard positives and negatives amongst the minibatch for each identity with alpha (margin) set to 2
-d.	Using argmax of positive and argmin of negative, get the triplet to be used to calculate loss
-e.	Back Propagate the feedback w.r.t loss
+    - a.	Train the network forward and store the 128-D embedding
+    - b.	Calculate the distance between each of the image in the mini batch
+    - c.	From an anchor, find semi hard and hard positives and negatives amongst the minibatch for each identity with alpha (margin) set to 2
+    - d.	Using argmax of positive and argmin of negative, get the triplet to be used to calculate loss
+    - e.	Back Propagate the feedback w.r.t loss
 4.	Validation: Classification using SVM over embeddings
-a.	Pre-Process the validation/test set
-b.	Get 128-D embeddings using the facenet model
-c.	Divide the dataset into train and test
-d.	Train an SVM model using train set
-e.	Test the model using test set
+    - a.	Pre-Process the validation/test set
+    - b.	Get 128-D embeddings using the facenet model
+    - c.	Divide the dataset into train and test
+    - d.	Train an SVM model using train set
+    - e.	Test the model using test set
 
 
 For detailed implementation, read the [project report here.](https://github.com/aknakshay/Face-Recognition-From-Scratch/blob/master/Project%20Report.pdf)
